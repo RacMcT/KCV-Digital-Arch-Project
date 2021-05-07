@@ -92,3 +92,25 @@ footer {
 main {
   padding-bottom: 20px;
 }
+
+.landing-img1 {
+  height: 400px;
+  width: auto;
+}
+
+.landing-img2 {
+  height: 600px;
+  width: auto;
+}
+
+.logo {
+  padding-left: 50%;
+  height: 40px;
+  width: 40px;
+}
+
+.intro-title h1 {
+  z-index: 5;
+  position: absolute;
+  left: 25%;
+}
