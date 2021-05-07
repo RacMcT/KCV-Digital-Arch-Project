@@ -7,7 +7,7 @@
   width: 100%; /* Full width */
   z-index: 2;
   display: grid;
-  grid-template-columns: 33% 34% 33%;
+  grid-template-columns: 25% 25% 25% 25%;
   grid-template-rows: 25% 25% 50%;
 }
 
@@ -53,4 +53,25 @@
 
 .searchbar a {
   color: white;
+}
+
+input:focus {
+  outline-color: gold;
+}
+
+button {
+  background-color: rgb(177, 207, 157);
+}
+
+button:hover {
+  background: #ddd;
+}
+
+.explore-btn {
+  text-align: center;
+  text-decoration: none;
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  font-size: 20px;
 }
