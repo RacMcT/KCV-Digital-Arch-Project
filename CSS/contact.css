@@ -75,8 +75,9 @@ footer {
 main {
   padding-top: 2%;
   padding-bottom: 20px;
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: 1fr, 1fr;
+  grid-gap: 10px;
 }
 
 /* ALL Images */
@@ -85,14 +86,9 @@ main {
   width: 40px;
 }
 
-.cont-img1 {
-  height: 400px;
-  width: auto;
-}
-
 /*Contact Form */
 .cont-form {
-  width: 30%;
+  width: 90%;
   padding: 5%;
 }
 /* Style inputs with type="text", select elements and textareas */
@@ -131,11 +127,8 @@ input[type="submit"]:hover {
   padding: 10px;
 }
 /* Info Text styling */
-.cont-text h2,
-p {
+.cont-text p {
   z-index: 4;
-  /*position: absolute;
-  bottom: 50%; */
 }
 
 /* Add a background image for info text */
@@ -144,6 +137,17 @@ p {
   background-image: url(/Images/image-icon.png);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
+  width: 100%;
   height: auto;
-  width: 50%;
+}
+
+.cont-text {
+  display: grid;
+  grid-column: 2/4;
+  padding: 5%;
+}
+
+.cont-text p{
+  padding-top: 50%;
 }
