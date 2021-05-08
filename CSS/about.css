@@ -91,7 +91,7 @@ section {
   background-size: cover;
   /* Keep the image from overlapping sibling elements. */
   z-index: -1;
-  height: 60vh;
+  height: 50vh;
 }
 
 .block1,
@@ -101,9 +101,11 @@ section {
   display: block;
 }
 
-h1,
-h2,
-h3 {
+h1 {
+  padding-bottom: 5%;
+  text-align: center;
+}
+h2 {
   color: black;
   z-index: 4;
   transform: translateY(-30vh) translateZ(1px);
@@ -114,7 +116,6 @@ section p {
   color: black;
   height: 10vh;
 }
-
 
 /* Footer */
 footer {
