@@ -67,6 +67,55 @@ button:hover {
   cursor: pointer;
 }
 
+.container {
+  height: 100vh;
+  overflow: hidden;
+  overflow-y: auto;
+  perspective: 3px;
+}
+
+section {
+  background-size: cover;
+  color: white;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.parallax {
+  background-image: url(/Images/abstract-background.jpg);
+  background-position: center center;
+  transform: translateZ(-1px) scale(1.5);
+  /* Force the background image to fill the whole element. */
+  background-size: cover;
+  /* Keep the image from overlapping sibling elements. */
+  z-index: -1;
+  height: 60vh;
+}
+
+.block1,
+.block2,
+.block3 {
+  background-color: white;
+  display: block;
+}
+
+h1,
+h2,
+h3 {
+  color: black;
+  z-index: 4;
+  transform: translateY(-30vh) translateZ(1px);
+  text-align: center;
+}
+
+section p {
+  color: black;
+  height: 10vh;
+}
+
+
 /* Footer */
 footer {
   padding-top: 20px;
@@ -81,29 +130,4 @@ footer {
 main {
   padding-top: 2%;
   padding-bottom: 20px;
-}
-
-body,
-html {
-  height: 100%;
-}
-
-.parallax {
-  /* The image used */
-  background-image: url("/Images/abstract-background.jpg");
-
-  /* Full height */
-  height: 100%;
-
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.block1,
-.block2,
-.block3 {
-  background-color: white;
 }
