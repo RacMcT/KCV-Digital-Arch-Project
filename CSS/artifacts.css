@@ -82,3 +82,24 @@ main {
   padding-top: 2%;
   padding-bottom: 20px;
 }
+
+.gallery-img img {
+  height: 200px;
+  width: auto;
+  cursor: pointer;
+  border: 2px solid black;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+h1 {
+  text-align: center;
+}
+
+a {
+  cursor: pointer;
+}
