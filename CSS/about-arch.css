@@ -82,3 +82,43 @@ main {
   padding-top: 2%;
   padding-bottom: 20px;
 }
+
+/* Articles and Container */
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 5%;
+  align-items: center;
+  justify-content: center;
+}
+
+.container img {
+  width: 200px;
+  height: auto;
+  padding: 5%;
+}
+
+.article {
+  width: 400px;
+  overflow-y: auto;
+  height: 300px;
+  justify-content: space-around;
+}
+
+.article img {
+  width: 100px;
+  height: auto;
+  padding: 2%;
+}
+
+.spacer {
+  background-color: blanchedalmond;
+  height: 25px;
+  width: 100%;
+  margin: 2%;
+}
+
+h1 {
+  text-align: center;
+}
