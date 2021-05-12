@@ -1,0 +1,119 @@
+/* The navigation bar */
+.nav {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+  z-index: 2;
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Nav Links- Change background on mouse-over */
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+}
+
+.navbar {
+  background-color: rgb(22, 94, 49);
+  top: 0px;
+  display: flex;
+  flex-direction: column;
+}
+
+.topnav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.sitemapnav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  font-size: small;
+  padding-bottom: 2%;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Logo */
+.logo {
+  height: 40px;
+  width: 40px;
+}
+
+/* Buttons and change on hover */
+button {
+  background-color: rgb(177, 207, 157);
+}
+
+button:hover {
+  background: #ddd;
+  cursor: pointer;
+}
+
+/* Footer */
+footer {
+  padding-top: 20px;
+  background-color: cadetblue;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2%;
+}
+
+/* Main Content */
+main {
+  padding-top: 2%;
+  padding-bottom: 20px;
+}
+
+/* Articles & Container */
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 5%;
+  align-items: center;
+  justify-content: center;
+}
+
+.article {
+  width: 500px;
+  overflow-y: auto;
+  height: 300px;
+  justify-content: space-around;
+}
+
+.article img {
+  width: 100px;
+  height: auto;
+  padding: 2%;
+}
+
+.spacer {
+  background-color: blanchedalmond;
+  height: 25px;
+  width: 100%;
+  margin: 2%;
+}
+
+h1 {
+  text-align: center;
+}
