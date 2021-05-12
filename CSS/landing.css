@@ -126,3 +126,53 @@ button {
   width: 40px;
 }
 
+/* Hide hamburger link that should open and close the nav on small screens */
+.topnav .icon {
+  display: none;
+  color: black;
+}
+
+/* Responsive Layout for Break-Points */
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 600px) {
+  /* Overall layout changes to column */
+
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .nav {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .nav a:not(:first-child) {
+    display: none;
+  }
+
+  .nav .icon {
+    float: right;
+    display: block;
+    padding-right: 5%;
+  }
+
+  /* The "responsive" class is added to the nav with JavaScript when the user clicks on the icon. This class makes the nav look good on small screens (display the links vertically instead of horizontally) */
+
+  .nav.responsive {
+    position: relative;
+  }
+
+  .nav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .nav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
