@@ -88,20 +88,31 @@ section {
   flex-direction: column;
 }
 
-.links a {
+.links-container a {
   flex-direction: column;
   cursor: pointer;
 }
 
 /* Container holding the image and the text */
-.img-container {
+.img-container1,
+.img-container2 {
   position: relative;
   text-align: center;
-  color: white;
+  margin: 2%;
 }
 
-.img-container p {
+.img-container1 p,
+.img-container2 p {
   position: absolute;
-  bottom: 8px;
-  right: 16px;
+  bottom: 15%;
+  right: 10%;
+  z-index: 4;
+  color: black;
+  background-color: whitesmoke;
+  padding: 4%;
+}
+
+.img-container1 {
+  width: 50%;
+  height: auto;
 }
