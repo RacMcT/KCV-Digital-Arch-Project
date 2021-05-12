@@ -83,6 +83,16 @@ main {
   padding-bottom: 20px;
 }
 
+section {
+  display: flex;
+  flex-direction: column;
+}
+
+.links a {
+  flex-direction: column;
+  cursor: pointer;
+}
+
 /* Container holding the image and the text */
 .img-container {
   position: relative;
