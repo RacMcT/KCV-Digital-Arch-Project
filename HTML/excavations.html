@@ -53,16 +53,22 @@
   <section class="site-map">
     <h2>Explore our Excavations</h2>
     <div class="site-map-container">
-      <!-- background image of site map using GIS data- then a side "menu" of clickable options that highlight areas on the map- polygons of features- and then a lightbox is activated to show slideshows of information?-->
-    <section class="map-nav-buttons">
-      <button class="map-nav-button" id="circleHouse">Circular House</button>
-      <button class="map-nav-button" id="fea12-01">Refuse Pit: 21-01</button>
-      <button class="map-nav-button" id="fea12-06">Refuse Pit: 12-06</button>
-      <button class="map-nav-button" id="longhouse">Longhouse</button>
-      <button class="map-nav-button" id="dogBurial">Dog Burial</button>
-      <button class="map-nav-button" id="excavationBlocks">Excavation Blocks</button>
+      <!-- background image of site map using GIS data- either connect to a geodatabase or more likely create site maps in ArcGIS and then use as background image for this div- then a side "menu" of clickable buttons that onClick highlight areas on the map- polygons of features- and then a lightbox is activated to show slideshows of information?
+      not sure if best to happen automatically or as a second click on the highlighted area? 2 clicks sucks for user, but it can help to differentiate what they're looking at on the map- make sense of the polygon shapes-->
+    <!-- image maps are not great for responsive design- so maybe it highlights the polygon and then automatically has lightbox slideshow of information?- or the "more info" is an accordian to the button div at the side?-->
+      <section class="map-nav-buttons">
+      <button class="map-nav-button" id="circleHouse" onclick="">Semi-Circular House</button>
+      <button class="map-nav-button" id="fea12-01" onclick="">Refuse Pit: 12-01</button>
+      <button class="map-nav-button" id="fea12-06" onclick="">Refuse Pit: 12-06</button>
+      <button class="map-nav-button" id="longhouse" onclick="">Longhouse</button>
+      <button class="map-nav-button" id="dogBurial" onclick="">Dog Burial</button>
+      <button class="map-nav-button" id="excavationBlocks" onclick="">Excavation Blocks</button>
     </section>
     </div> 
+  </section>
+
+  <section class="trivia">
+    <h2>Trivia Quiz??- code if have time?</h2>
   </section>
 
 </body>
