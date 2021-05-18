@@ -75,13 +75,38 @@ footer {
 main {
   padding-top: 2%;
   padding-bottom: 20px;
-  display: grid;
-  grid-template-columns: 1fr, 1fr;
-  grid-gap: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 /* Logo */
 .logo {
   height: 40px;
   width: 40px;
+}
+
+article {
+  width: 400px;
+  height: 400px;
+  overflow-y: auto;
+  margin-top: 2%;
+  border: solid 2px black;
+}
+
+article h2 {
+  text-align: center;
+}
+
+.site-map {
+  width: 400px;
+  height: auto;
+}
+
+.site-map-container {
+  background-image: url(/Images/abstract-background2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 500px;
 }
