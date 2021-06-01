@@ -11,3 +11,5 @@
 1. Planned features for version 1.1: (this is post capstone and graduation)
    Increased website accessability
    Trivia quizzes for users- make fun and interactive- easy checkpoint for instructors if using as an educational resource
+
+https://www.freecodecamp.org/news/how-to-write-a-good-readme-file/

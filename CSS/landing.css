@@ -1,11 +1,18 @@
 /* The navigation bar */
 .nav {
   overflow: hidden;
-  background-color: #333;
+  background-color: rgb(35, 73, 41);
   position: fixed; /* Set the navbar to fixed position */
   top: 0; /* Position the navbar at the top of the page */
   width: 100%; /* Full width */
   z-index: 2;
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-evenly;
+  align-items: center; */
+  flex-wrap: wrap;
+  font-size: small;
+  padding-bottom: 2%;
 }
 
 /* Links inside the navbar */
@@ -22,33 +29,6 @@
 .navbar a:hover {
   background: #ddd;
   color: black;
-}
-
-.navbar {
-  background-color: rgb(22, 94, 49);
-  top: 0px;
-  display: flex;
-  flex-direction: column;
-}
-
-.topnav {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
-}
-
-.sitemapnav {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  font-size: small;
-  padding-bottom: 2%;
-}
-
-.nav a {
-  color: white;
-  text-decoration: none;
 }
 
 /* Buttons and change on hover */
@@ -124,10 +104,11 @@ button {
 .logo {
   height: 40px;
   width: 40px;
+  position: relative;
 }
 
 /* Hide hamburger link that should open and close the nav on small screens */
-.topnav .icon {
+.nav .icon {
   display: none;
   color: black;
 }
